@@ -14,5 +14,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build the Docker image
+    - name: Docker version
       run: docker --version
+    - name: Docker container list
+      run: docker ps
